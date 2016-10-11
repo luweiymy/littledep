@@ -1,0 +1,8 @@
+<view class="container">
+    <!--<view wx:for="{{items}}">
+        {{index + 1}}: {{item.message}}
+    </view>-->
+    <audio name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>
+    <button type="primary" bindtap="audioPlay">播放</button>
+    <button type="primary" bindtap="audioPause">暂停</button>
+</view>

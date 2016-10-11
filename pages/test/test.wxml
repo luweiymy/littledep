@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="container">
+<!--列表渲染-->
+    <!--<view wx:for="{{array}}">{{item}}</view>-->
+<!--条件渲染-->
+    <!--<view wx:if="{{view == 'WEBVIEW'}}">WEBVIEW</view>
+    <view wx:elif="{{view == 'APP'}}">APP</view>
+    <view wx:else="{{view == 'MINA'}}">MINA</view>-->
+<!--模板-->
+    <!--<template name="staffname">
+        <view>
+            FirstName:{{firstName}},LastName:{{lastName}}
+        </view>
+    </template>
+    
+    <template is="staffname" data="{{...staffA}}"></template>
+    <template is="staffname" data="{{...staffB}}"></template>
+    <template is="staffname" data="{{...staffC}}"></template>-->
+<!--事件-->
+    <!--<view bindtap="add">{{count}}</view>-->
+<!--wx:if-->
+    <!--<view wx:if="{{length > 5}}">1</view>
+    <view wx:elif="{{length > 2}}">2</view>
+    <view wx:else>3</view>-->
+<!--wx:for-->
+<!--<view wx:for="{{items}}">
+    {{index}}:{{item.message}}
+</view>-->
+    <!--<view class="section">
+        <view class="section__title">vertical scroll</view>
+        <scroll-view scroll-y="true" style="height:200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <view id="green" class="scroll-view-item bc_green"></view>
+            <view id="red" class="scroll-view-item bc_red"></view>
+            <view id="yellow" class="scroll-view-item bc_yellow"></view>
+            <view id="blue" class="scroll-view-item bc_blue"></view>
+        </scroll-view>
+        <view class="btn-area">
+            <button size="mini" bindtap="tap">click me to scroll into view</button>
+            <button size="mini" bindtap="tapMove">click me to scroll</button>
+        </view>
+        
+    </view>-->
+    <!--<view class="section section_gap">
+        <view class="section_title">horizontal scroll</view>
+        <scroll-view class="scroll-view_H" scroll-x="true" style="width:100%">
+            <view id="green" class="scroll-view-item_H bc-green"></view>
+            <view id="red" class="scroll-view-item_H bc-red"></view>
+            <view id="yellow" class="scroll-view-item_H bc-yellow"></view>
+            <view id="blue" class="scroll-view-item_H bc-blue"></view>
+        </scroll-view>
+    </view>-->
+    <!--<view class="section">
+        <view class="section__title">flex-direction:row</view>
+        <view class="flex-wrp">
+            <view class="flex-item bc_green">1</view>
+            <view class="flex-item bc_red">2</view>
+            <view class="flex-item bc_blue">3</view>
+        </view>
+    </view>-->
+    <!--<swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">000000
+        <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+    </block>
+    </swiper>
+    <button bindtap="changeIndicatorDots"> indicator-dots </button>
+    <button bindtap="changeAutoplay"> autoplay </button>
+    <slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+    <slider bindchange="durationChange" show-value min="1000" max="10000"/> duration-->
+    <view class="section tc">
+        <video src="http://source.highso.com.cn/1505/GRXWKAXJ/0b1f0f88f367cd3c9b5a75ad0964d850.mp4" binderror="videoErrorCallback" width="100%" height="100%"></video>
+    </view>
+    <view class="section tc">
+        <video src="{{src}}"></video>
+        <view class="btn-area">
+            <button bindtap="bindButtonTap">获取视频</button>
+        </view>
+    </view>
+</view>

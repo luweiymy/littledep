@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/ymy/ymy",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "音乐吧",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/ymy/ymy",
+      "iconPath":"images/slidemenu.png",
+      "selectedIconPath":"images/slidemenu-select.png",
+      "text": "新歌"
+      
+    }, {
+      "pagePath": "pages/test/test",
+      "iconPath":"images/slidemenu.png",
+      "selectedIconPath":"images/slidemenu-select.png",
+      "text": "经典"
+      
+    }],
+    "borderStyle":"white",
+    "selectedColor":"#11cd6e"
+  }
+}
