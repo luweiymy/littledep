@@ -9,9 +9,11 @@
     </swiper>
     <view class="view-list">
          <block wx:for="{{conTitle}}">
-            <view class="view-title">
-                <text>{{item.title}}</text>
-            </view>
+            <navigator url="../detail/detail?title={{item.title}}" hover-class="navigator-hover">
+                <view class="view-title"  data-id="{{item.id}}">
+                    <text>{{item.title}}</text>
+                </view>
+            </navigator>         
          </block>
     </view>
 </view>

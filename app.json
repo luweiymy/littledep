@@ -1,12 +1,13 @@
 {
   "pages":[
     "pages/ymy/ymy",
-    "pages/test/test",
+    "pages/detail/detail",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
+    "backgroundColor": "#eeeeee",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "知乎日报",
     "navigationBarTextStyle":"black",

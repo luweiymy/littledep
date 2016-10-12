@@ -1,0 +1,11 @@
+/*detail.wxss*/
+.title{
+    line-height: 36px;
+    width: 100%;
+}
+text{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:block;
+}

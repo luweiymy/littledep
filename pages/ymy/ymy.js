@@ -28,5 +28,4 @@ Page({
         })
          this.index = 1
     }
-        
 })

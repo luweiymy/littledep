@@ -1,0 +1,6 @@
+<!--detail.wxml-->
+<view class="container">
+    <view class="title">
+        <text>{{items.title}}</text>
+    </view>
+</view>
