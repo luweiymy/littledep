@@ -1,0 +1,7 @@
+<!--主题日报-->
+<view class="container">
+    <block wx:for="">
+        <image></image>
+        <text></text>
+    </block>
+</view>
