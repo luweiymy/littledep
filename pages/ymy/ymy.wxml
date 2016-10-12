@@ -1,8 +1,17 @@
 <view class="container">
-    <!--<view wx:for="{{items}}">
-        {{index + 1}}: {{item.message}}
-    </view>-->
-    <audio name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>
-    <button type="primary" bindtap="audioPlay">播放</button>
-    <button type="primary" bindtap="audioPause">暂停</button>
+    <swiper indicatorDots="{{indicators}}" autoplay="{{autoplay}}" class="banners" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{banner}}">
+            <swiper-item class="banner" >
+                <image src="{{item.image}}"  data-id="{{item.id}}" bindtap="bindViewTap" class="banner-image" width="100%" height="100%"/>
+                <text class="banner-title">{{item.title}}</text>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="view-list">
+         <block wx:for="{{conTitle}}">
+            <view class="view-title">
+                <text>{{item.title}}</text>
+            </view>
+         </block>
+    </view>
 </view>

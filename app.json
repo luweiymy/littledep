@@ -8,7 +8,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "音乐吧",
+    "navigationBarTitleText": "知乎日报",
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh":"true"
   },
@@ -17,13 +17,13 @@
       "pagePath": "pages/ymy/ymy",
       "iconPath":"images/slidemenu.png",
       "selectedIconPath":"images/slidemenu-select.png",
-      "text": "新歌"
+      "text": "主页"
       
     }, {
       "pagePath": "pages/test/test",
       "iconPath":"images/slidemenu.png",
       "selectedIconPath":"images/slidemenu-select.png",
-      "text": "经典"
+      "text": "主题日报"
       
     }],
     "borderStyle":"white",
