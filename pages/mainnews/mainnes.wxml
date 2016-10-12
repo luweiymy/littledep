@@ -1,7 +1,7 @@
 <!--主题日报-->
 <view class="container">
-    <block wx:for="">
-        <image></image>
-        <text></text>
+    <block wx:for="{{mainnews}}">
+        <image src="{{item.image}}"  data-id="{{item.id}}"></image>
+        <text>{{item.title}}</text>
     </block>
 </view>

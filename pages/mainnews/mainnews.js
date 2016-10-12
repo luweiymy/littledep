@@ -6,6 +6,18 @@ Page({
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
+    wx.request({
+        url:'http://news-at.zhihu.com/api/4/news/latest',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        success: function (res) {
+            console.log(res)
+            that.setData({
+                mainnews:res.data.top_stories
+            })
+        }
+    })
   },
   onReady:function(){
     // 页面渲染完成
