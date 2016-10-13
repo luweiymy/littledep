@@ -9,7 +9,7 @@ Page({
         this.setData({
            items : options
         })
-       wx.navigateBack();
+      
     },
     onReady:function(){
     // 页面渲染完成
@@ -17,4 +17,8 @@ Page({
             title: '详情页面'
         })
   },
+  onUnload:function(){
+    // 页面关闭
+     wx.navigateBack();
+  }
 })

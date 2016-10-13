@@ -2,6 +2,7 @@
   "pages":[
     "pages/ymy/ymy",
     "pages/detail/detail",
+    "pages/mainnews/mainnews",
     "pages/index/index",
     "pages/logs/logs"
   ],

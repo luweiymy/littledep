@@ -1,0 +1,14 @@
+<!--主题日报-->
+<view class="container">
+    <view class="main-list">
+        <block wx:for="{{mainnews}}">
+            <view class="news">
+                <image src="{{item.image}}"  data-id="{{item.id}}" class="img"></image>
+                <text>{{item.title}}</text>
+            </view>
+            
+        </block>
+
+    </view>
+    
+</view>

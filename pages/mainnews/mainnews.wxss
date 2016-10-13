@@ -1,0 +1,32 @@
+/*mainnews wxss*/
+.container{
+    padding:0;
+    font-family: "Microsoft Yahei","微软雅黑";
+    background: #eee
+}
+.main-list{
+    width: 100%;
+    position: relative;
+}
+.img{
+    width: 60%;
+    height: 220rpx;
+    box-shadow: 1px 0 1px 1px lightgray;
+}
+.news{
+    display: block;
+    box-shadow: 1px 0 1px 1px lightgray;
+    margin: 0 auto;
+    margin-top:40rpx;
+    background: #fff;
+    width:80%;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20rpx;
+    border-radius: 10rpx
+}
+text{
+    font-size: 20rpx;
+    display: block;
+    color: gray;
+}
