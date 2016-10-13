@@ -3,4 +3,18 @@
     <view class="title">
         <text>{{items.title}}</text>
     </view>
+    <view class="section">
+        <input placeholder="小伙伴们的看法？" focus="{{focus}}" class="inp-comments" type="text"/>
+        <view class="img-list">
+            <image class="img" src="{{thumbup.src}}" mode="{{thumbup.mode}}"></image>  
+            <image class="img" src="{{comment.src}}" mode="{{comment.mode}}"></image>  
+            <image class="img" src="{{share.src}}" mode="{{thumbup.mode}}" bindtap="shareNews"></image>
+        </view>
+        <modal class="modal" confirm-text="关闭" hidden="{{modalHidden}}" bindcancel="modalChange" no-cancel="false">
+            <block wx:for="{{shareto}}">
+                <image class="img" src="{{item.src}}" mode="{{item.mode}}"></image>
+            </block>
+        </modal>
+
+    </view> 
 </view>

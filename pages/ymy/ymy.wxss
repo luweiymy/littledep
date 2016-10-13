@@ -41,8 +41,7 @@
     box-shadow: 1px 0 1px 1px lightgray;
     border-radius: 3rpx;
     padding:5%;
-    margin-top:15rpx;
-    font-family: "Microsoft Yahei","微软雅黑";
+    margin-top:15rpx; 
     background: #fff;
 }
 
