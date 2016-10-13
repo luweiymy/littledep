@@ -56,6 +56,4 @@ Page({
         modalHidden:true
     })
   }
-    
-
 })
