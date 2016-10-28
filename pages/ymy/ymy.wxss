@@ -22,10 +22,10 @@
   color: #FFF;
   position: absolute;
   width: 100%;
-  padding-left: 16rpx;
-  padding-right: 16rpx; 
-  bottom: 30rpx;
-  font-size: 16rpx;
+  padding-left: 16px;
+  padding-right: 16px; 
+  bottom: 30px;
+  font-size: 14px;
    left: 0;
 }
 .view-list{
@@ -36,12 +36,12 @@
     position: relative;
     width: 90%;
     color: grey;
-    line-height:36rpx;
-    font-size: 16rpx;
+    line-height:36px;
+    font-size: 14px;
     box-shadow: 1px 0 1px 1px lightgray;
-    border-radius: 3rpx;
+    border-radius: 3px;
     padding:5%;
-    margin-top:15rpx; 
+    margin-top:15px; 
     background: #fff;
 }
 

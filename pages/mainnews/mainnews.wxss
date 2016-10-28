@@ -10,23 +10,23 @@
 }
 .img{
     width: 60%;
-    height: 220rpx;
+    height: 220px;
     box-shadow: 1px 0 1px 1px lightgray;
 }
 .news{
     display: block;
     box-shadow: 1px 0 1px 1px lightgray;
     margin: 0 auto;
-    margin-top:40rpx;
+    margin-top:40px;
     background: #fff;
     width:80%;
     text-align: center;
     padding-top:20px;
-    padding-bottom: 20rpx;
-    border-radius: 10rpx
+    padding-bottom: 20px;
+    border-radius: 10px
 }
 text{
-    font-size: 20rpx;
+    font-size: 14px;
     display: block;
     color: gray;
 }

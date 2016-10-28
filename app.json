@@ -3,6 +3,7 @@
     "pages/ymy/ymy",
     "pages/detail/detail",
     "pages/mainnews/mainnews",
+    "pages/live/live",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -27,7 +28,14 @@
       "selectedIconPath":"images/slidemenu-select.png",
       "text": "主题日报"
       
+    }, {
+      "pagePath": "pages/live/live",
+      "iconPath":"images/slidemenu.png",
+      "selectedIconPath":"images/slidemenu-select.png",
+      "text": "主题直播"
+      
     }],
+    
     "borderStyle":"white",
     "selectedColor":"#11cd6e"
   }
