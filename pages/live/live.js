@@ -1,17 +1,25 @@
 // live.js
 var app = getApp()
+function getRandomColor(){
+    let rgb = []
+    for(let i = 0; i < 3;++i){
+        let color = Math.floor(Math.random() * 256).toString(16)
+        color = color.length == 1 ? '0' + color : color
+        rgb.push(color)
+    }
+    return '#' + rgb.join('')
+}
 Page({
   data:{
     // String1
   },
-  onLoad:function(options){
+  onReady:function(res){
     // 页面初始化 options为页面跳转所带来的参数
     // String2
+    this.vedioContext = wx.createContext('myVedio')
+
   },
-  onReady:function(){
-    // 页面渲染完成
-    // String3
-  },
+  inputValue:'',
   onShow:function(){
     // 页面显示
     // String4
