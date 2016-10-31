@@ -10,26 +10,74 @@ function getRandomColor(){
     return '#' + rgb.join('')
 }
 Page({
-  data:{
-    // String1
-  },
   onReady:function(res){
     // 页面初始化 options为页面跳转所带来的参数
     // String2
-    this.vedioContext = wx.createContext('myVedio')
+    this.videoContext = wx.createContext('myVideo')
 
   },
   inputValue:'',
-  onShow:function(){
-    // 页面显示
-    // String4
+  data:{
+    src:'',
+    danmuList:[
+      {
+        text:'第1s出现的弹幕',
+        color:'#ff00ff',
+        time:1
+      },
+      {
+        text:'第3s出现的弹幕',
+        color:'#4bacff',
+        time:3
+      },
+      {
+        text:'第4s出现的弹幕',
+        color:'#aaa',
+        time:4
+      },
+      {
+        text:'第4s出现的弹幕',
+        color:'#aaa',
+        time:4
+      },
+      {
+        text:'第5s出现的弹幕',
+        color:'#00ff00',
+        time:5
+      },
+      {
+        text:'第10s出现的弹幕',
+        color:'#00ff00',
+        time:10
+      }
+      
+    ]
   },
-  onHide:function(){
-    // 页面隐藏
-    // String5
+  bindInputBlur:function(e){
+    this.inputValue = e.detail.value
   },
-  onUnload:function(){
-    // 页面关闭
-    // String6
+  bindButtonTap:function(){
+    var that = this
+    wx.chooseVideo({
+      sourceType: ['album', 'camera'], // album 从相册选视频，camera 使用相机拍摄
+      maxDuration: 60, // 拍摄视频最长拍摄时间，单位秒。最长支持60秒
+      camera: ['front', 'back'],
+      success: function(res){
+        // success
+        that.setData({
+          src:res.tempFilePath
+        })
+      }
+    })
+  },
+  // bindSendDanmu:function(){
+  //   this.videoContext.sendDanmu({
+  //     text:this.inputValue,
+  //     color:getRandomColor()
+  //   })
+  // },
+  videoErrorCallback:function(e){
+    console.log('视频错误信息：')
+    console.log(e.detail.errMsg)
   }
 })

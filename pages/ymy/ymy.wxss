@@ -23,7 +23,7 @@
   position: absolute;
   width: 100%;
   padding-left: 16px;
-  padding-right: 16px; 
+  padding-right: 16rpx; 
   bottom: 30px;
   font-size: 14px;
    left: 0;
