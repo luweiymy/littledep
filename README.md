@@ -17,6 +17,9 @@
 
 ![image](https://github.com/luweiymy/littledep/blob/master/images/newsshare.png)
 
+##主题直播显示效果:
+
+![image](https://github.com/luweiymy/littledep/blob/master/images/livepage.png)
 
 ##使用
 
